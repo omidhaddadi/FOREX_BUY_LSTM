@@ -73,30 +73,40 @@ pip install MetaTrader5 pandas numpy torch scikit-learn imblearn pytz
   ```bash
   python forex_lstm_trading.py
 
+- **Process**:  
+  The script performs the following steps:
+  1. Retrieves historical data for the specified Forex pairs.
+  2. Processes data into sequences and trains the LSTM model.
+  3. Evaluates the model on a test set and generates predictions.
+  4. Places BUY orders in MT5 if the prediction meets specified thresholds.
 
-Process:
-The script performs the following steps:
+---
 
-Retrieves historical data for the specified Forex pairs.
-Processes data into sequences and trains the LSTM model.
-Evaluates the model on a test set and generates predictions.
-Places BUY orders in MT5 if the prediction meets specified thresholds.
+## **Model Details**
 
-Model Details
-LSTM Architecture
-Structure:
-Two LSTM layers with:
-Dropout for regularization.
-Batch normalization for stable training.
-Fully connected layer for binary classification.
-Activation function:
-Sigmoid.
-Loss Function
-Focal Loss: Designed to handle imbalanced target classes effectively.
-Input Features
-The model uses the following features:
-Open
-High
-Low
-Close
-Volume
+### **LSTM Architecture**
+- **Structure**:
+  - Two LSTM layers with:
+    - Dropout for regularization.
+    - Batch normalization for stable training.
+  - Fully connected layer for binary classification.
+
+- **Activation function**:  
+  Sigmoid.
+
+---
+
+### **Loss Function**
+- **Focal Loss**:  
+  Designed to handle imbalanced target classes effectively.
+
+---
+
+### **Input Features**
+- The model uses the following features:
+  - `Open`
+  - `High`
+  - `Low`
+  - `Close`
+  - `Volume`
+
