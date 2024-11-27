@@ -44,7 +44,7 @@ Install the required dependencies using pip:
 
 ```bash
 pip install MetaTrader5 pandas numpy torch scikit-learn imblearn pytz
-
+```
 ## **Usage Instructions**
 
 ### **1. Configure MetaTrader 5**
