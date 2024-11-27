@@ -58,19 +58,22 @@ pip install MetaTrader5 pandas numpy torch scikit-learn imblearn pytz
 
   ```python
   symbols = ["EURUSD", "GBPUSD", "AUDUSD", "NZDUSD", "USDJPY"]
-Configure parameters:
-Modify the following parameters to fit your requirements:
-lookback_days
-total_days
-batch_size
 
-3. Execution
-Run the script:
-Execute the following command in your terminal:
+- **Configure parameters**:  
+  Modify the following parameters to fit your requirements:
+  - `lookback_days`
+  - `total_days`
+  - `batch_size`
 
-bash
-Copy code
-python forex_lstm_trading.py
+---
+
+### **3. Execution**
+- **Run the script**:  
+  Execute the following command in your terminal:
+  ```bash
+  python forex_lstm_trading.py
+
+
 Process:
 The script performs the following steps:
 
